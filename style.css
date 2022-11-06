@@ -1,0 +1,30 @@
+/* Clases Genericas */
+
+.ocultarElemento {
+    visibility: hidden;
+}
+
+.mostrarElemento {
+    visibility: visible;
+}
+
+/* Documento */
+
+html {
+    overflow-x: hidden;
+}
+
+
+
+.Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 8.333333333333333%;
+    left: 2.777777777777778%;
+    top: 3.90625%;
+}
