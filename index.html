@@ -18,5 +18,109 @@
         <img class="Logo" src="img/Logo.png" alt="Logo Alura">
     </header>
 
+    <main>
+        <div class="pantallaUno">
+            <button id="iniciarJuego">Iniciar Juego</button>
+            <button id="agregarPalabra">Agregar nueva palabra</button>
+        </div>
+
+        <div class="pantallaDos">
+            
+            <input id="inputAgregarPalabra" type="text" maxlength="8" placeholder="Ingrese una palabra">
+            
+            <div class="advertencia">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="iconoAdvertencia" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                <p id="advertenciaParrafo">Máx. de 8 letras</p>
+            </div>
+
+            <div class="botonesPantallaDos">
+                <button id="botonGuardarYEmpezar">Guardar y empezar</button>
+                <button id="botonCancelarPantallaDos">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="pantallaTres">
+        
+            <canvas class="areaCanvas" width="1200" height="860"></canvas>
+            
+            <div class="botonesPantallaTres">
+                <button id="nuevoJuego">Nuevo Juego</button>
+                <button id="rendirse">Rendirse</button>  
+            </div>
+
+        </div>
+        
+        <div class="botonesPantallaTres"></div>
+
+            <div class="botonNuevoJuego">
+                <rect class="rectBotonNuevoJuego">
+                    <p id="rectBotonNuevoJuegoTitulo">Advertencia</p>
+                    <p id="rectBotonNuevoJuegoTexto">¿Seguro que quieres iniciar un juego nuevo? <br>
+                        Se perdera tu progreso actual.
+                    </p>
+                    <div class="botonesAdvertenciasPantallaTres">
+                        <button class="botonAceptarNuevoJuego">Aceptar</button>
+                        <button class="botonCancelarNuevoJuego">Cancelar</button>
+                    </div>
+                </rect>
+            </div>
+
+            <div class="botonRendirse">
+                <rect class="rectBotonRendirse">
+                    <p id="rectBotonRendirseTitulo">Advertencia</p>
+                    <p id="rectBotonRendirseTexto">¿Seguro que quieres rendirte? <br>
+                        Se perdera tu progreso actual.
+                    </p>
+                    <div class="botonesAdvertenciasPantallaTres">
+                        <button class="botonAceptarRendirse">Aceptar</button>
+                        <button class="botonCancelarRendirse">Cancelar</button>
+                    </div>
+                </rect>
+            </div>
+
+        </div>
+
+        <div class="advertenciaPerdiste">
+            <rect class="alertaPerdiste">
+                <div class="botonesAdvertenciaPerdiste">
+                    <button class="botonJugarDeNuevoPerdiste">Jugar de Nuevo</button>
+                    <button class="botonVolverMenuPerdiste">Volver al Menu</button>
+                </div>
+                <p class="perdistePalabra">¡Perdiste!</p>
+                <p class="perdisteTexto">La palabra secreta era </p>
+                <p class="perdistePalabraAdivinar"> </p>
+            </rect>
+        </div>
+        
+        <div class="advertenciaGanaste">
+            <rect class="alertaGanaste">
+                <div class="botonesAdvertenciaGanaste">
+                    <button class="botonJugarDeNuevoGanaste">Jugar de Nuevo</button>
+                    <button class="botonVolverMenuGanaste">Volver al Menu</button>
+                </div>
+                <p class="ganastePalabra">¡Ganaste!</p>
+                <p class="ganasteTexto">Adivinaste la palabra</p>
+                <p class="ganastePalabraAdivinar"> </p>
+            </rect>
+        </div>
+        
+        <div class="informacion">
+            
+            <svg class= "informacionIcono" width="2.875em" height="2.875em" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.75 16.5v-6h-3V12h1.5v4.5H9V18h6v-1.5h-2.25Z"></path>
+                <path d="M12 6a1.125 1.125 0 1 0 0 2.25A1.125 1.125 0 0 0 12 6Z"></path>
+                <path d="M12 22.5a10.5 10.5 0 1 1 0-21 10.5 10.5 0 0 1 0 21ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"></path>
+            </svg>
+
+        </div>
+    
+    </main>
+
+    <script src="canvas.js"></script>
+    <script src="index.js"></script>
+
 </body>
 </html>
